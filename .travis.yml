@@ -4,3 +4,5 @@ install:
   - pip install mkdocs-material
 script:
   - mkdocs build
+after_success:
+  - mkdocs gh-deploy
