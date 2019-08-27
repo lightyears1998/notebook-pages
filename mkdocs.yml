@@ -1,3 +1,5 @@
-site_name: My Docs
+site_name: Notebook Pages
 theme:
-    name: 'material'
+  name: 'material'
+markdown_extensions:
+  - codehilite
