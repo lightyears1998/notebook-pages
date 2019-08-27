@@ -1,4 +1,7 @@
 site_name: Notebook Pages
+repo_name: 'lightyears1998/notebook'
+repo_url: 'https://github.com/lightyears1998/notebook'
+edit_uri: 'https://github.com/lightyears1998/notebook/tree/master/'
 theme:
   name: 'material'
 markdown_extensions:
