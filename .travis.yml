@@ -1,8 +1,15 @@
 language: python
+python: 3.7
 install:
-  - pip install mkdocs
-  - pip install mkdocs-material
+- pip install mkdocs
+- pip install mkdocs-material
 script:
-  - mkdocs build
-after_success:
-  - mkdocs gh-deploy
+- mkdocs build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token:
+    secure: BEwxcSTRtQyXB/I+9pnwGwGforwITLEYnw4wMVBMcm8RQP7PySSuX5NwUI6K7Q+UHlYznYeCoSsLboKdb+j3vXnfTHE0wyahWj6wYb9vmu3G9C6MloQGoh4ujnUGJ1dc+duDTm74v6vE4Hzsk/Nx+zIbrKrWwz8msNg95wKMnzfj+oq1HLKVGuphKFCIdhasrDCvQygFcHlON1NU/xqh0Qp2vQGXomgYRMAJprE6KpWm7kgosuTwymbjCkJIr+3Zhwfkj4W+JFGBVOBTfjWk1gzt01HbwzkydPuMLGkCRvTr4gphm3NJOTLU85h8auCDC1mGRymqHyYb1XX+3lTyocdmDBnfsYYXepqd2xw/zc1srbrGtdcEUAH3Gb3WcQZo8/gcYNXRIGVnDkYIdBtuEB/xMFOSwdY98RC/pREuboqemfo+1aGFZiRWDXKiccqWp6Gm0LDcGefJI9p84pAwSrzFX2ceps+MkV4YztPLO4Bpo1H0/pB1CWjAvt+F9YZhOliUdEwzBTQxMJGW8n9a2b+W7wgHByH3Bkua5dVksRJrRBK1Il8p902CT+WcIHq8cs4GpEX1dQ6nWPzEOE6Msi5T6AO6qHCwQyWs2rEsFKYDMjxgxhZl4Tjg+KKTXYEHdArsNEWRxzgLsSixCl7LQPTnUMT2uM5yEZletUCdaJY=
+  keep_history: true
+  on:
+    branch: master
