@@ -17,7 +17,9 @@ jobs:
       with:
         python-version: 3.7
     - name: Install dependencies
-      run: pip install mkdocs mkdocs-material
+      run: |
+        pip install mkdocs mkdocs-material
+        pip install pygments
     - name: Clone notebook
       run: git clone --depth=1 https://github.com/lightyears1998/notebook.git docs
     - name: Generate site
