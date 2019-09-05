@@ -5,4 +5,8 @@ edit_uri: 'https://github.com/lightyears1998/notebook/tree/master/'
 theme:
   name: 'material'
 markdown_extensions:
-  - codehilite
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
