@@ -4,6 +4,10 @@ repo_url: 'https://github.com/lightyears1998/notebook'
 edit_uri: 'https://github.com/lightyears1998/notebook/tree/master/'
 theme:
   name: 'material'
+plugins:
+  - search
+  - minify:
+      minify_html: true
 markdown_extensions:
   - admonition
   - codehilite:
