@@ -1,11 +1,11 @@
-name: Daily Build
+name: Hourly Build
 
 on:
   push:
     branches:
     - master
   schedule:
-  - cron: '30 4 * * *'
+  - cron: '0 * * * *'
 
 jobs:
   build:
@@ -16,12 +16,12 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.7
-    - name: Install dependencies
+    - name: Install Dependencies
       run: |
         pip install pygments
         pip install mkdocs mkdocs-material
         pip install mkdocs-minify-plugin
-    - name: Clone notebook
+    - name: Clone Notebook
       run: git clone --depth=1 https://github.com/lightyears1998/notebook.git docs
     - name: Generate site
       run: mkdocs build
