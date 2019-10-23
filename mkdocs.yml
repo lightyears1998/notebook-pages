@@ -1,7 +1,12 @@
 site_name: Notebook Pages
+site_description: 'lightyears1998的个人笔记本'
+site_author: 'lightyears1998'
+site_url: 'https://lightyears1998.github.io/notebook-pages/'
+
 repo_name: 'lightyears1998/notebook'
 repo_url: 'https://github.com/lightyears1998/notebook'
 edit_uri: 'https://github.com/lightyears1998/notebook/tree/master/'
+
 theme:
   name: 'material'
 
