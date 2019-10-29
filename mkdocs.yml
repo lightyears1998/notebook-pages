@@ -21,7 +21,3 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
-
-google_analytics:
-  - 'UA-150736604-1'
-  - 'auto'
